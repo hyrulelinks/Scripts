@@ -12,6 +12,7 @@ export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebr
 if [ "$(uname -m)" = "arm64" ]; then
   test -r ~/.bash_profile && echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bash_profile
   test -r ~/.zprofile && echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+  test -r ~/.zshrc && echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
 fi
 
 # 替换现有 Homebrew 源
